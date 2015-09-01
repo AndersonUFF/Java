@@ -33,6 +33,15 @@
 	int i2 = Integer.valueOf("101011",2); // transformando um valor binário em inteiro;
 	int i3 = Integer.valueOf("101011",8); // transformando um valor octal para inteiro;
 	int i4 = Integer.valueOf("101011",16); // transformando um valor hexadecimal para inteiro;
+
+	---IMPORTANTE---
+	- NO JAVA 7 É POSSIVEL ATRIBUIR O TIPO WRAPPER DIRETAMENTE A VARIAVEL AO INVÉS DE INSTANCIA-LA COM O OPERADOR 'NEW';
+		EX:
+
+		Integer x = 10;
+		Integer y = 5;
+		Integer soma = x + y;
+		System.out.println("Soma: " + soma);
 */
 
 class Wrapper{
