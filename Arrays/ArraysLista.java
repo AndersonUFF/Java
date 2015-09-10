@@ -51,7 +51,7 @@ public class ArraysLista {
 		System.out.println(cores.toString()); // NOVAMENTE IMPRIMINDO O ARRAYLIST.
 		
 		/* O METODO "corest.contains()" RETORNA SE O ELEMENTO INFORMADO NO PARAMETRO EXISTE NO ARRAYLIST. NESTE CASO QUEREMOS SABER SE
-		A COR "PRETO"  EXISTE NO ARRAYLIST. */
+		A COR "PRETO"  EXISTE NO ARRAYLIST. SE EXISTE RETORNA O VALOR "TRUE" CASO CONTRÁRIO RETORNA O VALOR "FALSE".*/
 		System.out.println("O ArrayList contem a cor Preto? " + cores.contains("preto"));
 
 	}
