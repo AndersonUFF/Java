@@ -2,7 +2,16 @@
 	----CLASSE ARRAYLIST----
 
 	- APRESENTAR A CLASSE ESPECIAL PARA CRIAÇÃO E MANIPULAÇÃO DE ARRAYS.
+	- IMPORTANTE: O ARRAYLISTA SÓ PODE SER UTILIZADOS COM "OBJETOS" COMO POR EXEMPLO OS TIPOS "WRAPPERS".
+	  ELE NÃO FUNCIONA COM TIPOS PRIMITIVOS COMO "int", "float", "double", ETC.
 
+	  EXEMPLO:
+		
+		CORRETO! FUNCIONA!
+		ArrayList<Integer> cores = new ArrayList<>();
+
+		ERRADO! NÃO FUNCIONA!!
+		ArrayList<int> cores = new ArrayList<>();
 */
 
 import java.util.Scanner;
