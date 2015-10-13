@@ -31,6 +31,7 @@ public class Aluno {
 		bancoDados.conectar();
 		if(bancoDados.estaConectado()){
 			bancoDados.inserirAluno(nome, sobreNome, notaP1, notaP2, mediaFinal, situacao);
+			bancoDados.desconectar();
 			return true;
 		}else{
 			System.out.println("Não foi possivel conectar ao banco de dados!");
