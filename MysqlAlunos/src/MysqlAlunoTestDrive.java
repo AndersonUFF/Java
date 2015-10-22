@@ -7,7 +7,7 @@ public class MysqlAlunoTestDrive {
 		Aluno aluno = new Aluno();
 		Scanner sc = new Scanner(System.in);
 		
-		/*for(int i = 0; i < MAX; i++){
+		for(int i = 0; i < MAX; i++){
 			System.out.println("Digite o nome do Aluno");
 			aluno.nome = sc.next();
 			
@@ -39,7 +39,7 @@ public class MysqlAlunoTestDrive {
 			}else{
 				System.out.println("OK! Você nao deseja salvar o aluno");
 			}			
-		}*/
+		}
 		aluno.visualizarAlunosSalvos();
 	}
 
