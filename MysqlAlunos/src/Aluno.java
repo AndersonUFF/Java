@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Aluno {
 	
 	String nome;
@@ -19,9 +17,9 @@ public class Aluno {
 			return "AP";
 		}else{
 			if(mediaFinal <= 3.9){
-				return "VS";
-			}else{
 				return "REP";
+			}else{
+				return "VS";
 			}
 		}
 	}
@@ -46,5 +44,12 @@ public class Aluno {
 		System.out.println("Nota P2: " + notaP2);
 		System.out.println("Media Final: " + mediaFinal);
 		System.out.println("Status: " + situacao);
+	}
+	
+	void visualizarAlunosSalvos(){
+		BancoDadosMysql bancoDados = new BancoDadosMysql();
+		bancoDados.conectar();
+		bancoDados.listarAlunos();
+		bancoDados.desconectar();
 	}
 }

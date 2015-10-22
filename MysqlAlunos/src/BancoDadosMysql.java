@@ -28,12 +28,23 @@ public class BancoDadosMysql {
 			return false;
 		}
 	}
-	
+	/*METODO PARA LISTAR TODOS OS ALUNOS SALVOS NO BANCO DE DADOS*/
 	public void listarAlunos(){
+		Aluno aluno = new Aluno();
 		try {
-			
+			String query = "SELECT * FROM aluno";
+			this.resultSet = this.statement.executeQuery(query);
+			this.statement = this.conexao.createStatement();
+			while(this.resultSet.next()){
+				System.out.print("Nome: " + this.resultSet.getString("nome"));
+				System.out.println(" " + this.resultSet.getString("sobreNome"));
+				System.out.println("Nota P1: " + this.resultSet.getString("notaP1"));
+				System.out.println("Nota P2: " + this.resultSet.getString("notaP2"));
+				System.out.println("Media Final: " + this.resultSet.getString("mediaFinal"));
+				System.out.println("Status: " + this.resultSet.getString("situacao"));
+			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println("Erro:" + e.getMessage());
 		}
 	}
 	/* METODO PARA INSERIR ALUNOS NO BANCO DE DADOS */
