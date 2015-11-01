@@ -30,7 +30,7 @@ public class BancoDadosMysql {
 	}
 	/*METODO PARA LISTAR TODOS OS ALUNOS SALVOS NO BANCO DE DADOS*/
 	public void listarAlunos(){
-		Aluno aluno = new Aluno();
+
 		try {
 			String query = "SELECT * FROM aluno";
 			this.resultSet = this.statement.executeQuery(query);
