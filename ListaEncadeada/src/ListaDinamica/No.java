@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ListaDinamica;
 
 /**
@@ -12,6 +8,11 @@ package ListaDinamica;
 public class No {
     private int info;
     private No prox;
+
+    //METODO CONSTRUTOR VAZIO
+    public No{
+
+    }
 
     public void setInfo(int info) {
         this.info = info;
